@@ -46,6 +46,7 @@ Swagger UI: http://localhost:8000/docs
 ReDoc: http://localhost:8000/redocKey 
 
 Key Endpoints
+```
 Method,        Endpoint,               Description
 POST,         /contacts/,            Create a new contact
 GET,          /contacts/,            List all contacts (supports name, last_name, email filters)
@@ -53,9 +54,9 @@ GET,         /contacts/{id},         Get a specific contact by ID
 PUT,         /contacts/{id},         Update an existing contact
 DELETE,      /contacts/{id},         Delete a contact
 GET,         /contacts/birthdays/,   Get contacts with birthdays in the next 7 days
-
+```
 Project Structure:
-
+```
 ├── models.py          # SQLAlchemy database models
 ├── schemas.py         # Pydantic data validation schemas
 ├── database.py       # Database connection and session management
@@ -63,6 +64,6 @@ Project Structure:
 ├── docker-compose.yaml # Multi-container orchestration
 ├── pyproject.toml     # Poetry dependencies
 └── README.md          # Project documentation
-
+```
  License
  This project was created as a homework assignment for the GoIT Python Web course.
