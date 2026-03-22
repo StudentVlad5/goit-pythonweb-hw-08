@@ -22,15 +22,16 @@ Installation & Setup
 Prerequisites
 Docker and Docker Compose installed on your machine.(Optional) Poetry installed for local development.
 
-1. Clone the repositoryBashgit clone https://github.com/YOUR_USERNAME/goit-pythonweb-hw-08.git
-'''
+1. Clone the repository
+```
+   git clone https://github.com/YOUR_USERNAME/goit-pythonweb-hw-08.git
 cd goit-pythonweb-hw-08
-'''
+```
 
-2. Configure Environment Variables
+3. Configure Environment Variables
    The application uses the following connection string (update it in database.py or create a .env file):postgresql://vlad:qwertyd@db:5432/contacts_db
 
-3. Run with Docker Compose
+4. Run with Docker Compose
 The easiest way to start the project is using Docker. This will spin up the PostgreSQL database and the FastAPI application automatically.
 '''
 docker-compose up --build
