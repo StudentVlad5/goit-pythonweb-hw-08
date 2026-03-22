@@ -34,9 +34,9 @@ postgresql://vlad:qwertyd@db:5432/contacts_db
 
 3. Run with Docker Compose
 The easiest way to start the project is using Docker. This will spin up the PostgreSQL database and the FastAPI application automatically.
-'''
+```
 docker-compose up --build
-'''
+```
 
 The API will be available at: http://localhost:8000
 
