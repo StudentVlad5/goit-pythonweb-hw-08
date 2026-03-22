@@ -24,14 +24,15 @@ Docker and Docker Compose installed on your machine.(Optional) Poetry installed 
 
 1. Clone the repository
 ```
-   git clone https://github.com/YOUR_USERNAME/goit-pythonweb-hw-08.git
+git clone https://github.com/YOUR_USERNAME/goit-pythonweb-hw-08.git
 cd goit-pythonweb-hw-08
 ```
 
-3. Configure Environment Variables
-   The application uses the following connection string (update it in database.py or create a .env file):postgresql://vlad:qwertyd@db:5432/contacts_db
+2. Configure Environment Variables
+The application uses the following connection string (update it in database.py or create a .env file):
+postgresql://vlad:qwertyd@db:5432/contacts_db
 
-4. Run with Docker Compose
+3. Run with Docker Compose
 The easiest way to start the project is using Docker. This will spin up the PostgreSQL database and the FastAPI application automatically.
 '''
 docker-compose up --build
@@ -45,13 +46,13 @@ Swagger UI: http://localhost:8000/docs
 ReDoc: http://localhost:8000/redocKey 
 
 Key Endpoints
-Method,Endpoint,Description
-POST,/contacts/,Create a new contact
-GET,/contacts/,"List all contacts (supports name, last_name, email filters)"
-GET,/contacts/{id},Get a specific contact by ID
-PUT,/contacts/{id},Update an existing contact
-DELETE,/contacts/{id},Delete a contact
-GET,/contacts/birthdays/,Get contacts with birthdays in the next 7 days
+Method,        Endpoint,               Description
+POST,         /contacts/,            Create a new contact
+GET,          /contacts/,            List all contacts (supports name, last_name, email filters)
+GET,         /contacts/{id},         Get a specific contact by ID
+PUT,         /contacts/{id},         Update an existing contact
+DELETE,      /contacts/{id},         Delete a contact
+GET,         /contacts/birthdays/,   Get contacts with birthdays in the next 7 days
 
 Project Structure:
 
